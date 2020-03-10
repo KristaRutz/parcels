@@ -6,12 +6,6 @@ namespace Parcels.Controllers
 {
   public class ParcelsController : Controller
   {
-    // [HttpGet("/parcel")]
-    // public ActionResult Index()
-    // {
-    //   return View();
-    // }
-
     [HttpGet("/parcel/new")]
     public ActionResult CreateParcel()
     {
@@ -25,10 +19,11 @@ namespace Parcels.Controllers
       return View("Index", newParcel);
     }
 
-    [HttpGet("/parcel/sent")]
+    [HttpPost("/parcel/sent")]
     public ActionResult Success()
     {
-      return View();
+      Parcel recentParcel = Parcel.GetParcels[Parcel.GetParcels.Count];
+      return View(recentParcel);
     }
   }
 }

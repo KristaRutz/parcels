@@ -1,4 +1,5 @@
 using System;
+using Systems.Collections.Generic;
 
 namespace Parcels.Models
 {
@@ -14,12 +15,15 @@ namespace Parcels.Models
     public int Width { get; set; }
     public int Weight { get; set; }
 
+    private static List<Parcel> _parcels { get; set; } = new List<Parcel> { };
+
     public Parcel(int height, int length, int width, int weight)
     {
       Height = height;
       Length = length;
       Width = width;
       Weight = weight;
+      _parcels.Add(this);
     }
 
     public int GetVolume()
@@ -30,6 +34,16 @@ namespace Parcels.Models
     public int GetCostToShip()
     {
       return GetVolume() + Weight * 2;
+    }
+
+    public List<Parcel> GetParcels()
+    {
+      return _parcels;
+    }
+
+    public void ClearParcels()
+    {
+      _parcels.Clear();
     }
   }
 }

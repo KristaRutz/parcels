@@ -1,8 +1,8 @@
-# Project Name (C# Console Application)
+# Parcels (C# Console Application)
 
-#### A console-based application to simulate ... where the user can ... hosted on [GitHub](https://github.com/KristaRutz/). _Last Updated 03.03.2020._
+#### A web-based application to simulate a package shipping company where the user can calculate shipping costs for various sizes of parcel, hosted on [GitHub](https://github.com/KristaRutz/). _Last Updated 03.03.2020._
 
-#### By _**Krista Rutz, [other contributors]**_
+#### By _**Krista Rutz, Steven Fleming**_
 
 ## Description
 

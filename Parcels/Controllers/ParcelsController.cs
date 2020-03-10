@@ -22,7 +22,8 @@ namespace Parcels.Controllers
     [HttpPost("/parcel/sent")]
     public ActionResult Success()
     {
-      Parcel recentParcel = Parcel.GetParcels[Parcel.GetParcels.Count];
+      List<Parcel> myParcels = Parcel.GetParcelList();
+      Parcel recentParcel = myParcels[(myParcels.Count - 1)];
       return View(recentParcel);
     }
   }

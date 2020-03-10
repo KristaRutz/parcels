@@ -1,5 +1,5 @@
 using System;
-using Systems.Collections.Generic;
+using System.Collections.Generic;
 
 namespace Parcels.Models
 {
@@ -36,7 +36,7 @@ namespace Parcels.Models
       return GetVolume() + Weight * 2;
     }
 
-    public List<Parcel> GetParcels()
+    public static List<Parcel> GetParcelList()
     {
       return _parcels;
     }

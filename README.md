@@ -1,13 +1,13 @@
 # Parcels (C# Console Application)
 
-#### A web-based application to simulate a package shipping company where the user can calculate shipping costs for various sizes of parcel, hosted on [GitHub](https://github.com/KristaRutz/). _Last Updated 03.03.2020._
+#### A web-based application to simulate a package shipping company where the user can calculate shipping costs for various sizes of parcel, hosted on [GitHub](https://github.com/KristaRutz/parcels). _Last Updated 03.03.2020._
 
 #### By _**Krista Rutz, Steven Fleming**_
 
 ## Description
 
-This application lets the user... and does...
-It might even be hosted on hosted on [GitHub](https://github.com/KristaRutz/). It does so using this and this technology or concept.
+This application lets the user input dimensions and weight and does calculations for volume and shipping cost.
+It might even be hosted on hosted on [GitHub](https://github.com/KristaRutz/parcels). It does so using an MVC framework and multiple controllers.
 
 ## Installation / Set-up
 
@@ -15,13 +15,13 @@ Download or clone the repository to run this program locally! _This program requ
 
 - Download or clone this repo.
   - **To Download ZIP:**
-    - Select "Download" on the [GitHub Repository](https://github.com/KristaRutz/) site
-    - Once downloaded, open the ZIP and extract files. The new folder will be created as 'ProjectName.Solution'.
+    - Select "Download" on the [GitHub Repository](https://github.com/KristaRutz/parcels) site
+    - Once downloaded, open the ZIP and extract files. The new folder will be created as 'Parcels'.
   - **To Clone:**
-    - Clone from command line into your Desktop: `$ git clone https://github.com/KristaRutz/...`
-    - The new directory will be created as 'Desktop/ProjectName.Solution'.
+    - Clone from command line into your Desktop: `$ git clone https://github.com/KristaRutz/parcels`
+    - The new directory will be created as 'Desktop/Parcels'.
 - Once you have stored the files locally, execute the following commands.
-  - Navigate to the application directory: `$ cd ProjectName.Solution/ProjectName`
+  - Navigate to the application directory: `$ cd Parcels/Parcels`
   - `dotnet build`
   - `dotnet run`
 - Upon success, the program will begin running in your console.
@@ -36,23 +36,26 @@ Download or clone the repository to run this program locally! _This program requ
 <details>
   <summary>Expand specs for this project</summary>
 
-| Spec | Example Input | Expected Output |
-| :--- | :------------ | :-------------- |
+```Following the guidelines below, create a website for a fictional shipping company that helps users calculate shipping estimates:
 
+Create a Parcel class. It should contain a constructor, and getters and setters for each property. All properties should be set to private. You should be able to create a new parcel and specify the dimensions and weight in the arguments.
 
-</details>
-<details>
-  <summary>Expand user stories for this project</summary>
+Create a website where the user can submit a form with the dimensions and weight of a Parcel, and you can use the data in the form to instantiate a Parcel object and display its dimensions and weight.
 
-| As a _User-Type_, | I want... | so that... |
-| :---------------- | :-------- | :--------- |
+When you call a method called Volume() on a Parcel instance, it should return the product of the sides.
 
+When you call a CostToShip() method on your parcel, return a cost based on a formula you make up.
+
+Display the cost to ship and the volume of a Parcel with its dimensions in your site.
+
+Bonus: Add validation and make sure the Parcel object is not created if any of the form fields are blank. Display an error message instead. Also make sure your user can only enter numbers into the form.
+```
 
 </details>
 
 ## Known Bugs
 
-- No known bugs
+- Cannot display the price of most recent parcel since last commit.
 
 ## Support and contact details
 
@@ -60,7 +63,7 @@ Please contact me if you run into any issues or have questions, ideas or concern
 
 ### License
 
-Copyright (c) 2020 **_Krista Rutz, [Others]_**
+Copyright (c) 2020 **_Krista Rutz, Steven Fleming_**
 
 _This software is licensed under the MIT license._
 

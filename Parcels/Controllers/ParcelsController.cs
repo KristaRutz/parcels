@@ -24,5 +24,11 @@ namespace Parcels.Controllers
       Parcel newParcel = new Parcel(int.Parse(height), int.Parse(length), int.Parse(width), int.Parse(weight));
       return View("Index", newParcel);
     }
+
+    [HttpGet("/parcel/sent")]
+    public ActionResult Success()
+    {
+      return View();
+    }
   }
 }

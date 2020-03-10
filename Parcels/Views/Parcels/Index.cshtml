@@ -2,3 +2,7 @@
 <p>You are attemping to ship a package measuring @Model.Height cm X @Model.Length cm X @Model.Width cm, weighing @Model.Weight grams.</p>
 <p>Estimated shipping costs: $@Model.GetCostToShip().00</p>
 <p>The volume of your package is: @Model.GetVolume()cm cubed</p>
+
+<form action="/parcel/sent" method="get">
+  <button type="submit">Pay Now and Send!</button>
+</form>
